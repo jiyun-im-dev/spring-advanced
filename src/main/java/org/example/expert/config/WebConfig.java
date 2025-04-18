@@ -22,7 +22,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new AdminApiLoggingInterceptor())
-                .addPathPatterns("/admin/comments/*"); // CommentAdminController - deleteComment 에 적용
+                .addPathPatterns("/admin/comments/*"); // deleteComment()에 적용
     }
 
 }
